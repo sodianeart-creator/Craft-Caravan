@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Caravan - Mobile Crafting Experiences</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            animation: fadeInDown 1s ease;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .signup-form {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .success-message {
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+            .signup-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎨 Craft Caravan</h1>
+            <p class="tagline">Bringing Creative Workshops to Your Doorstep</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="section">
+                <h2>About Craft Caravan</h2>
+                <p style="font-size: 1.2em; line-height: 1.8;">
+                    Craft Caravan is a mobile crafting experience that brings the joy of handmade creativity directly to your community, event, or celebration. Whether you're planning a birthday party, corporate team-building event, or community gathering, we roll up with all the supplies, expertise, and inspiration you need for an unforgettable crafting experience.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>What We Offer</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚐</div>
+                        <h3>Mobile Studio</h3>
+                        <p>Fully equipped mobile workshop comes to your location with all supplies included</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✂️</div>
+                        <h3>Variety of Crafts</h3>
+                        <p>From jewelry making to painting, macramé to pottery - we offer diverse creative workshops</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>All Skill Levels</h3>
+                        <p>Perfect for beginners and experienced crafters alike with expert instruction</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Events & Parties</h3>
+                        <p>Ideal for birthdays, team building, bridal showers, and community events</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Sign Up for Updates</h2>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    Interested in booking Craft Caravan or learning about our upcoming workshops? Fill out the form below and we'll keep you in the loop!
+                </p>
+                
+                <div class="signup-form">
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select an option</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="community">Community Workshop</option>
+                                <option value="private">Private Group Session</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell us more about your event or questions:</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Sign Me Up!</button>
+                    </form>
+                    
+                    <div id="successMessage" class="success-message">
+                        ✓ Thank you for signing up! We'll be in touch soon.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                interest: document.getElementById('interest').value,
+                message: document.getElementById('message').value
+            };
+            
+            // In a real application, you would send this data to a server
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
